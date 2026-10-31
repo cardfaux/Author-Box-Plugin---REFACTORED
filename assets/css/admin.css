@@ -1,0 +1,117 @@
+.cab-admin__columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 520px);
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 1100px) {
+  .cab-admin__columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.cab-admin__author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cab-admin__thumb {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cab-admin__actions {
+  white-space: nowrap;
+  text-align: right;
+}
+
+.cab-delete-form {
+  display: inline;
+}
+
+.cab-admin__form form {
+  padding: 20px 24px;
+  background: #fff;
+  border: 1px solid #dcdcde;
+}
+
+.cab-admin__form h3 {
+  margin: 24px 0 4px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f1;
+}
+
+.cab-admin__form h3:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.cab-admin__form label {
+  display: block;
+  margin: 14px 0 6px;
+  font-weight: 600;
+}
+
+.cab-admin__form input[type='text'],
+.cab-admin__form input[type='url'],
+.cab-admin__form textarea {
+  width: 100%;
+}
+
+.cab-admin__hint {
+  color: #646970;
+  font-weight: 400;
+}
+
+.cab-admin__image {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cab-admin__image img {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cab-admin__image img[hidden],
+.cab-admin__image [hidden] {
+  display: none;
+}
+
+.cab-admin__image input[type='url'] {
+  flex: 1 1 auto;
+}
+
+.cab-admin__prefixed {
+  display: flex;
+  align-items: stretch;
+}
+
+.cab-admin__prefixed span {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background: #f6f7f7;
+  border: 1px solid #8c8f94;
+  border-right: 0;
+  border-radius: 4px 0 0 4px;
+  color: #50575e;
+}
+
+.cab-admin__prefixed input {
+  border-radius: 0 4px 4px 0;
+}
+
+.cab-invalid-list {
+  margin: 0 0 8px 20px;
+  list-style: disc;
+}
